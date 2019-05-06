@@ -9,9 +9,25 @@
   outline: none !important;
 }
 
+#topnav .navbar-toggle span {
+  height: 2px;
+  width: 100%;
+  background-color: #6c757d;
+  display: block;
+  margin-bottom: 5px;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.navbar-custom .topnav-menu .nav-link:hover {
+  color: #0496ff;
+}
+
 .navbar-custom {
 font-size: 15px;
 }
+
 
 @import "admin/_icons";
 
