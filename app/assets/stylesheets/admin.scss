@@ -1,3 +1,17 @@
+.navbar-custom .topnav-menu .nav-link {
+  padding: 0 15px;
+  color: #6c757d;
+  min-width: 32px;
+  display: block;
+  line-height: 70px;
+  text-align: center;
+  max-height: 70px;
+  outline: none !important;
+}
+
+.navbar-custom {
+font-size: 15px;
+}
 
 @import "admin/_icons";
 
