@@ -64,12 +64,15 @@
         span {
             height: 2px;
             width: 100%;
-            background-color: $gray-500;
+            background-color: #6c757d;
             display: block;
             margin-bottom: 5px;
             transition: -webkit-transform .5s ease;
             transition: transform .5s ease;
         }
+
+
+
 
         &.open {
             span {
