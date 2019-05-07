@@ -19,6 +19,18 @@ i.fe-x.space {
 	margin-right: 20px;
 }
 
+.notify-icon.bg-primary {
+  height: 36px;
+  width: 36px;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+
 
 #topnav .navbar-toggle span {
   height: 2px;
@@ -36,7 +48,7 @@ i.fe-x.space {
 }
 
 .navbar-custom {
-font-size: 16px;
+font-size: 15px;
 }
 
 
@@ -44,6 +56,7 @@ font-size: 16px;
 
 //Fonts
 @import "admin/custom/fonts/fonts";
+@import "font-awesome";
 
 //Core files
 @import "bootstrap/functions";
