@@ -8,6 +8,8 @@ Website: https://coderthemes.com/
 Contact: support@coderthemes.com
 File: Main Js File
 */
+
+
 !function ($) {
   "use strict";
 
@@ -350,7 +352,8 @@ File: Main Js File
 Waves.init();
 
 
-$(function(){
+
+$(function () {
   var hash = window.location.hash;
   hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
@@ -360,4 +363,22 @@ $(function(){
     window.location.hash = this.hash;
     $('html,body').scrollTop(scrollmem);
   });
+
+  $('.dropdown-menu-profile a').click(function (e) {
+    if (window.location.pathname != $(this).attr('href')) {
+      window.location = $(this).attr('href')
+    }
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    var arr = $(this).attr('href').split('#')
+    if (arr.length > 1) {
+      var hash = arr[arr.length - 1] // last elem of array 
+      $('.nav.nav-tabs a[href="#' + hash + '"]').tab('show');
+    }
+    else {
+      window.location = $(this).attr('href')
+    }
+  });
+
+
 });
