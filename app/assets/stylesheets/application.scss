@@ -644,3 +644,10 @@ p {
   outline: none !important;
 }
 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #e8f1f2;
+  border-color: #e8f1f2 #e8f1f2 #e8f1f2;
+}
+

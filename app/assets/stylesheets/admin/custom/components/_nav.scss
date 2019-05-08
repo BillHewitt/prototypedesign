@@ -53,3 +53,9 @@ a.active {
 .tab-content {
     padding: 20px 0 0 0;
 }  
+
+.nav-link.everyday.active {
+  color: #495057;
+  background-color: #e8f1f2;
+  border-color: #e8f1f2 #e8f1f2 #e8f1f2;
+}

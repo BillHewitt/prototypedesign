@@ -29,7 +29,7 @@
 
                 <div class="row">
                     <div class="col-lg-4 col-xl-4">
-                        <div class="card-box text-center">
+                        <div class="card-box text-center d-none d-lg-block">
                             <img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
 
                             <h4 class="mb-0">Bill Hewitt</h4>
@@ -59,11 +59,11 @@
                             </div>
 
                             <ul class="social-list list-inline mt-3 mb-0">
-                                <button type="button" class="btn btn-light">Edit Details</button>
+                                <a href="/admin/profileedit" class="btn btn-light">Edit Details</a>
                             </ul>
                         </div> <!-- end card-box -->
 
-                        <div class="card-box text-center">
+                        <div class="card-box text-center d-none d-lg-block">
                             <h4 class="mb-0">Awards</h4>
 
 
@@ -81,7 +81,7 @@
                     <div class="col-lg-8 col-xl-8">
                         <div class="card-box">
                             <ul class="nav nav-tabs nav-bordered nav-justified">
-                                <li class="nav-item">
+                                <li class="nav-item d-none d-lg-block">
                                     <a href="#aboutme1" data-toggle="tab" aria-expanded="true" class="nav-link">
                                         Overview
                                     </a>
@@ -191,11 +191,11 @@
                                     <ul class="list-unstyled timeline-sm">
                                         <li class="timeline-sm-item">
                                             <span class="timeline-sm-date">1 Day Ago</span>
-                                            <h5 class="mt-0 mb-1">You <a href="#"> submitted feedback</a> to manager name</h5>
+                                            <h5 class="mt-0 mb-1">You <a href="#"> submitted feedback</a> to Paul Schulz</h5>
                                         </li>
                                         <li class="timeline-sm-item">
                                             <span class="timeline-sm-date">2 Days Ago</span>
-                                            <h5 class="mt-0 mb-1">You <a href="#"> recognised</a> colleague name</h5>
+                                            <h5 class="mt-0 mb-1">You <a href="#"> recognised</a> Dan Taylor</h5>
                                         </li>
                                         <li class="timeline-sm-item">
                                             <span class="timeline-sm-date">4 Days Ago</span>
@@ -203,13 +203,13 @@
                                         </li>
                                         <li class="timeline-sm-item">
                                             <span class="timeline-sm-date">6 Days Ago</span>
-                                           <h5 class="mt-0 mb-1">You received a <a href="#"> manager shoutout</a></h5>
+                                           <h5 class="mt-0 mb-1">You received a <a href="#"> shoutout</a> from Paul Schulz</h5>
                                             <p class="text-muted mt-2">Great job the other day on the presentation. Really awesome.</p>
                                         </li>
                                         <li class="timeline-sm-item">
                                             <span class="timeline-sm-date">10 Days Ago</span>
                                            <h5 class="mt-0 mb-1">You received <a href="#"> 1 day
-                                           holiday</a></h5>
+                                           holiday</a> from Paul Schulz</h5>
                                             <p class="text-muted mt-2">We can see that the mood is pretty low right now. Go and enjoy an extra day to recharge.</p>
                                         </li>
                                         <li class="timeline-sm-item">
@@ -234,43 +234,19 @@
 
                                     <div class="row">
                                         <div class="col-md-6 col-xl-3">
-                                            <div class="product-box">
-
-                                                <div class="product-img-bg">
-                                                    <img src="/template-assets/images/products/product-1.jpg" alt="product-pic" class="img-fluid">
-                                                </div>
-
-                                                <div class="product-info">
-                                                    <div class="row align-items-center">
-                                                        <div class="col">
-                                                            <h5 class="font-16 mt-0 sp-line-1">
-                    <a href="ecommerce-prduct-detail.html" class="text-dark">Perkbox Medical</a> </h5>
-                                                            <p class="m-0"> <span class="text-muted"> 1 Year Licence</span>
-                    </p>
-                                                        </div>
-                                                    </div> <!-- end row -->
-                                                </div> <!-- end product info-->
-                                            </div> <!-- end card-box-->
+                                            <a href="#">
+                                              <img src="/template-assets/images/products/placeholder.jpg" alt="Oculus Go" class="img-fluid rounded">
+                                              <h5 class="font-15 mt-3 sp-line-1">Perkbox Medical</h5>
+                                              <p class="m-0"> <span class="text-muted"> 1 Year Licence</span></p>
+                                            </a>
                                         </div> <!-- end col-->
 
                                         <div class="col-md-6 col-xl-3">
-                                            <div class="product-box">
-
-                                                <div class="product-img-bg">
-                                                    <img src="/template-assets/images/products/product-1.jpg" alt="product-pic" class="img-fluid">
-                                                </div>
-
-                                                <div class="product-info">
-                                                    <div class="row align-items-center">
-                                                        <div class="col">
-                                                            <h5 class="font-16 mt-0 sp-line-1">
-                    <a href="ecommerce-prduct-detail.html" class="text-dark">Asos</a> </h5>
-                                                            <p class="m-0"> <span class="text-muted"> £50 Gift Card</span>
-                    </p>
-                                                        </div>
-                                                    </div> <!-- end row -->
-                                                </div> <!-- end product info-->
-                                            </div> <!-- end card-box-->
+                                            <a href="#">
+                                              <img src="/template-assets/images/products/placeholder.jpg" alt="Oculus Go" class="img-fluid rounded">
+                                              <h5 class="font-15 mt-3 sp-line-1">Asos</h5>
+                                              <p class="m-0"> <span class="text-muted"> £50 Giftcard</span></p>
+                                            </a>
                                         </div> <!-- end col-->
 
                                     </div>
@@ -389,65 +365,40 @@
 </i> Rewards</h5>
                                         <div class="row">
                                         <div class="col-md-6 col-xl-3">
-                                            <div class="product-box">
-
-                                                <div class="product-img-bg">
-                                                    <img src="/template-assets/images/products/product-1.jpg" alt="product-pic" class="img-fluid">
-                                                </div>
-
-                                                <div class="product-info">
-                                                    <div class="row align-items-center">
-                                                        <div class="col">
-                                                            <h5 class="font-16 mt-0 sp-line-1">
-                    <a href="ecommerce-prduct-detail.html" class="text-dark">Perkbox Medical</a> </h5>
-                                                            <p class="m-0"> <span class="text-muted"> 1 Year Licence</span>
-                    </p>
-                                                        </div>
-                                                    </div> <!-- end row -->
-                                                </div> <!-- end product info-->
-                                            </div> <!-- end card-box-->
+                                            <a href="#">
+                                              <img src="/template-assets/images/products/placeholder.jpg" alt="Oculus Go" class="img-fluid rounded">
+                                              <h5 class="font-15 mt-3 sp-line-1">1 Day Holiday</h5>
+                                              <p class="m-0"> <span class="text-muted small">For</span> <span class="badge badge-light badge-pill">Above & Beyond</span></p>
+                                            </a>
                                         </div> <!-- end col-->
 
                                         <div class="col-md-6 col-xl-3">
-                                            <div class="product-box">
-
-                                                <div class="product-img-bg">
-                                                    <img src="/template-assets/images/products/product-1.jpg" alt="product-pic" class="img-fluid">
-                                                </div>
-
-                                                <div class="product-info">
-                                                    <div class="row align-items-center">
-                                                        <div class="col">
-                                                            <h5 class="font-16 mt-0 sp-line-1">
-                    <a href="ecommerce-prduct-detail.html" class="text-dark">Asos</a> </h5>
-                                                            <p class="m-0"> <span class="text-muted"> £50 Gift Card</span>
-                    </p>
-                                                        </div>
-                                                    </div> <!-- end row -->
-                                                </div> <!-- end product info-->
-                                            </div> <!-- end card-box-->
+                                            <a href="#">
+                                              <img src="/template-assets/images/products/placeholder.jpg" alt="Oculus Go" class="img-fluid rounded">
+                                              <h5 class="font-15 mt-3 sp-line-1">300 Credits</h5>
+                                              <p class="m-0"> <span class="text-muted small">For</span> <span class="badge badge-light badge-pill">Zero Fear</span></p>
+                                            </a>
                                         </div> <!-- end col-->
 
-                                        <div class="col-md-6 col-xl-3">
-                                            <div class="product-box">
+                                        </div>
+                                    </form>
 
-                                                <div class="product-img-bg">
-                                                    <img src="/template-assets/images/products/product-1.jpg" alt="product-pic" class="img-fluid">
-                                                </div>
+                                    <h5 class="mb-4 mt-4 text-uppercase">
+                                        Incentives</h5>
 
-                                                <div class="product-info">
-                                                    <div class="row align-items-center">
-                                                        <div class="col">
-                                                            <h5 class="font-16 mt-0 sp-line-1">
-                    <a href="ecommerce-prduct-detail.html" class="text-dark">Asos</a> </h5>
-                                                            <p class="m-0"> <span class="text-muted"> £50 Gift Card</span>
-                    </p>
-                                                        </div>
-                                                    </div> <!-- end row -->
-                                                </div> <!-- end product info-->
-                                            </div> <!-- end card-box-->
-                                        </div> <!-- end col-->
+                                        <div class="row">
+                                            
+                                            <div class="col-md-6 col-xl-3">
+                                                <a href="#">
+                                                  <img src="/template-assets/images/products/placeholder.jpg" alt="Oculus Go" class="img-fluid rounded">
+                                                  <h5 class="font-15 mt-3 sp-line-1"><i class="fa fa-lock" aria-hidden="true"></i> 50 Credits</h5>
+                                                  <p class="m-0"> <span class="text-muted small"> Incentive for</span> <span class="badge badge-light badge-pill">We're a family not a job</span></p>
+                                                </a>
+                                            </div> <!-- end col-->
+
+                                        </div>
                                         
+
                                 </div>
                                 <!-- end settings content-->
 
@@ -455,8 +406,59 @@
                         </div> <!-- end card-box-->
 
                     </div> <!-- end col -->
+
+
                 </div>
                 <!-- end row-->
+                <div class="col-lg-4 col-xl-4">
+                        <div class="card-box text-center d-md-none">
+                            <img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+
+                            <h4 class="mb-0">Bill Hewitt</h4>
+                            <p class="text-muted mt-1"><i class="fa fa-diamond" aria-hidden="true"></i> 375 Credits</p>
+
+                            <button type="button" class="btn btn-warning">View Wallet</button>
+
+                            <div class="text-left ml-4 mt-4">
+                                <h4 class="font-15 text-uppercase mb-3">About Me :</h4>
+                                <p class="text-muted mb-2"><strong>Full Name :</strong> <span class="ml-2">Bill Hewitt</span></p>
+
+                                <p class="text-muted mb-2"><strong>Values :</strong><span class="ml-2"><span class="badge badge-light badge-pill">Work-Life Balance</span>, <span class="badge badge-light badge-pill">Teamwork</span></span></p>
+
+                                <p class="text-muted mb-2"><strong>Interests :</strong><span class="ml-2"><span class="badge badge-light badge-pill">Sport</span>, <span class="badge badge-light badge-pill">Music</span></span></p>
+
+                                <p class="text-muted mb-2"><strong>Location :</strong> <span class="ml-2">UK</span></p>
+                                
+                                <p class="text-muted mb-2"><strong>Teams :</strong> <span class="ml-2">Product & Engineering, London</span></p>
+
+                                <p class="text-muted mb-2"><strong>Mobile :</strong><span class="ml-2">07777 777777</span></p>
+
+                                <p class="text-muted mb-2"><strong>Email :</strong> <span class="ml-2 ">bill.hewitt@perkbox.com</span></p>
+
+                                <p class="text-muted mb-2"><strong>Gender :</strong> <span class="ml-2 ">Male</span></p>
+
+                                
+                            </div>
+
+                            <ul class="social-list list-inline mt-3 mb-0">
+                                <a href="/admin/profileedit" class="btn btn-light">Edit Details</a>
+                            </ul>
+                        </div> <!-- end card-box -->
+
+                        <div class="card-box text-center d-md-none">
+                            <h4 class="mb-0">Awards</h4>
+
+
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <p class="text-muted mt-4">You've not received any team or company awards yet</p>
+                                </div>
+                            </div>
+                        </div> <!-- end card-box -->
+
+                        
+
+                    </div> <!-- end col-->
                 
             </div> <!-- end container -->
        </div><%- content_for :footer_js do %>
