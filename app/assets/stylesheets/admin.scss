@@ -9,6 +9,14 @@
   outline: none !important;
 }
 
+@viewport {
+  width: device-width;
+    zoom: 1;
+    min-zoom: 0.5;
+    max-zoom: 3;
+    user-zoom: fixed;
+}
+
 
 .mdi.mdi-wallet-outline.noti-icon.wallet {
 	font-size: 16px;
@@ -19,8 +27,6 @@
 i.fe-x.space {
 	margin-right: 20px;
 }
-
-
 
 #topnav .navbar-toggle span {
   height: 2px;
