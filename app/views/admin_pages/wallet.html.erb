@@ -1,0 +1,147 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title">Wallet</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                
+                <div class="row">
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="card-box">
+                            <h4 class="header-title mb-3">Credit History</h4>
+
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Description</th>
+                                        <th>Amount</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1/5/18</td>
+                                        <td>Credit Back from card-linked</td>
+                                        <td>+50 Credits <span class="badge badge-light badge-pill">Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>28/4/18</td>
+                                        <td>Credit Reward from Your Manager</td>
+                                        <td>+20 Credits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28/4/18</td>
+                                        <td>Credit Reward from Your Manager</td>
+                                        <td>+100 Credits</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="card-box d-none d-lg-block">
+
+                            <h4 class="mb-0 text-center ">Your Credits</h4>
+                            <h4 class="text-muted text-center  mt-1 mb-4"><i class="fa fa-diamond" aria-hidden="true"></i> 300</h4>
+
+
+
+                           <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fa fa-diamond" aria-hidden="true"></i> Use Anywhere <i class="mdi mdi-chevron-down"></i> <span class="float-right"> 100</span></li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fa fa-diamond" aria-hidden="true"></i> Everyday Offers <span class="float-right">50 </span></li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fa fa-diamond" aria-hidden="true"></i> Learning & Development <span class="float-right"> 100 </span></li>
+                            </ul>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fa fa-diamond" aria-hidden="true"></i> Health & Support <span class="float-right"> 50 </span></li>
+                            </ul>
+
+                            <ul class="social-list list-inline mt-3 mb-0 text-center">
+                                <a href="/admin/profileedit" class="btn btn-light">Purchase Credit</a>
+                            </ul>
+                        </div>
+
+
+                        <div id="accordion" class="mb-3">
+                            <div class="card mb-1">
+                                <div class="card-header" id="headingOne" style="background-color: #fff";>
+                                    <h5 class="m-0">
+                                        <a class="text-dark collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false">
+                                            <i class="mdi mdi-help-circle mr-1 text-primary"></i> 
+                                            Where can I spend my credit? <i class="mdi mdi-chevron-down float-right"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                    
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                    <div class="card-body">
+                                        You can spend your credit in the collections.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-1">
+                                <div class="card-header" id="headingTwo" style="background-color: #fff";>
+                                    <h5 class="m-0">
+                                        <a class="text-dark" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+                                            <i class="mdi mdi-help-circle mr-1 text-primary"></i> 
+                                            How can I earn more credit? <i class="mdi mdi-chevron-down float-right"></i>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                                        anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                        excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!-- end container -->
+       </div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/autocomplete/jquery.autocomplete.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<% end %>
