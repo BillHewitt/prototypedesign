@@ -12,14 +12,30 @@
     }
 }
 
+
 .btn-rounded {
     border-radius: 2em;
+}
+
+.btn-white {
+    color: $gray-900;
+    background-color: #fff;
+}
+
+.btn-white:hover {
+    background-color: #f8f8f8;
+    outline: 0;
+}
+
+.btn-white:focus {
+    background-color: #f8f8f8;
+    outline: none;
 }
 
 //
 // light button
 // 
-.btn-light,.btn-white {
+.btn-light {
     color: $gray-900;
 }
 
