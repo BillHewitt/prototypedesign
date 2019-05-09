@@ -444,4 +444,6 @@ $('.scroller-left').click(function() {
     $('.list').animate({left:"-="+getLeftPosi()+"px"},'slow',function(){
     
     });
-});    
+});  
+
+  
