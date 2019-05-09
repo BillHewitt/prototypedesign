@@ -28,3 +28,10 @@
   src: font-url("cerebrisans-bold.eot");
   src: local("Cerebri-sans Bold"), font-url("cerebrisans-bold.woff") format("woff");
   font-weight: 700; }
+
+
+  @font-face {
+  font-family: "SF-UI Regular,sans-serif";
+  src: font-url("SF-UI-Text-Regular.otf");
+  src: local("SF-UI Regular"), font-url("SF-UI-Text-Regular.otf") format("otf");
+  font-weight: 400; }
