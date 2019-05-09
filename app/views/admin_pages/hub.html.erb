@@ -1,0 +1,238 @@
+<%- content_for :head_css do %>
+  
+<%= stylesheet_link_tag 'admin/libs/jquery-nice-select/nice-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/switchery/switchery.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/multiselect/multi-select.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/select2/select2.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-select/bootstrap-select.min.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= stylesheet_link_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<% end %>
+
+<div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="page-title-box">
+                            <h4 class="page-title mb-0">The Hub</h4>
+                            <p class="mb-4">Feel part of something bigger, celebrate successes, and help create the culture you're proud to be part of.</p>
+                        </div>
+                    </div>
+                </div>     
+                <!-- end page title --> 
+
+                <div class="row">
+                    <div class="col-lg-8 col-xl-8">
+
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="btn-group mb-3">
+                                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All My Teams <i class="mdi mdi-chevron-down"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Team 1</a>
+                                        <a class="dropdown-item" href="#">Team 2</a>
+                                        <a class="dropdown-item" href="#">Team 3</a>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group mb-3">
+                                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post Type <i class="mdi mdi-chevron-down"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Recognition</a>
+                                        <a class="dropdown-item" href="#">Company Action</a>
+                                        <a class="dropdown-item" href="#">Have your say</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="btn-group mb-3 float-right">
+                                    <button type="button" class="btn btn-white dropdown-toggle float-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Most recent <i class="mdi mdi-chevron-down"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Popular</a>
+                                        <a class="dropdown-item" href="#">Relevent to you</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                       <div class="card-box">
+
+
+                                    <!-- Story Box-->
+                                    <div class="border border-light p-2 mb-3">
+                                        <div class="media">
+                                            <img class="mr-2 avatar-sm rounded-circle" src="/template-assets/images/users/paul.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="m-0">Paul Schulz</h5>
+                                                <p class="text-muted"><small>Company action for <span class="badge badge-light badge-pill">Work-Life Balance</span> about 2 minuts ago</small></p>
+                                            </div>
+                                        </div>
+                                        <p>Story based around the idea of time lapse, animation to post soon!</p>
+
+                                        <img src="/template-assets/images/small/img-1.jpg" alt="post-img" class="rounded mr-1" height="60">
+                                        <img src="/template-assets/images/small/img-2.jpg" alt="post-img" class="rounded mr-1" height="60">
+                                        <img src="/template-assets/images/small/img-3.jpg" alt="post-img" class="rounded" height="60">
+
+                                        <div class="mt-2">
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-comment"></i> Comment</a>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart-outline"></i> 28 Likes</a>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-share-variant"></i> Share</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Story Box-->
+                                    <div class="border border-light p-2 mb-3">
+                                        <div class="media">
+                                            <img class="mr-2 avatar-sm rounded-circle" src="assets/images/users/user-4.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="m-0">Thelma Fridley</h5>
+                                                <p class="text-muted"><small>about 1 hour ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="font-16 text-center font-italic text-dark">
+                                            <i class="mdi mdi-format-quote-open font-20"></i> Cras sit amet nibh libero, in
+                                            gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Duis
+                                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+                                            porta. Mauris massa.
+                                        </div>
+
+                                        <div class="post-user-comment-box">
+                                            <div class="media">
+                                                <img class="mr-2 avatar-sm rounded-circle" src="assets/images/users/user-3.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="mt-0">Jeremy Tomlinson <small class="text-muted">3 hours ago</small></h5>
+                                                    Nice work, makes me think of The Money Pit.
+
+                                                    <br>
+                                                    <a href="javascript: void(0);" class="text-muted font-13 d-inline-block mt-2"><i class="mdi mdi-reply"></i> Reply</a>
+
+                                                    <div class="media mt-3">
+                                                        <a class="pr-2" href="#">
+                                                            <img src="assets/images/users/user-4.jpg" class="avatar-sm rounded-circle" alt="Generic placeholder image">
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h5 class="mt-0">Kathleen Thomas <small class="text-muted">5 hours ago</small></h5>
+                                                            i'm in the middle of a timelapse animation myself! (Very different though.) Awesome stuff.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="media mt-2">
+                                                <a class="pr-2" href="#">
+                                                    <img src="assets/images/users/user-1.jpg" class="rounded-circle" alt="Generic placeholder image" height="31">
+                                                </a>
+                                                <div class="media-body">
+                                                    <input type="text" id="simpleinput" class="form-control border-0 form-control-sm" placeholder="Add comment">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-2">
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-danger"><i class="mdi mdi-heart"></i> Like (28)</a>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-share-variant"></i> Share</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Story Box-->
+                                    <div class="border border-light p-2 mb-3">
+                                        <div class="media">
+                                            <img class="mr-2 avatar-sm rounded-circle" src="assets/images/users/user-6.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="m-0">Jeremy Tomlinson</h5>
+                                                <p class="text-muted"><small>15 hours ago</small></p>
+                                            </div>
+                                        </div>
+                                        <p>The parallax is a little odd but O.o that house build is awesome!!</p>
+
+                                        <iframe src="https://player.vimeo.com/video/87993762" height="300" class="img-fluid border-0"></iframe>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <a href="javascript:void(0);" class="text-danger"><i class="mdi mdi-spin mdi-loading mr-1"></i> Load more </a>
+                                    </div>
+
+                                </div>
+                                <!-- end timeline content-->
+
+
+
+                    </div>
+
+
+                    <div class="col-lg-4 col-xl-4">
+
+                        <div class="card-box text-center d-none d-lg-block">
+                            <img src="/template-assets/images/users/bill.jpg" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+
+                            <h4 class="mb-0">Bill Hewitt</h4>
+                            <p class="text-muted mt-1"><i class="fa fa-diamond" aria-hidden="true"></i> 375 Credits</p>
+
+                            <a href="/admin/wallet" class="btn btn-warning">View Wallet</a>
+
+                            <div class="text-left ml-4 mt-4">
+                                <h4 class="font-15 text-uppercase mb-3">About Me :</h4>
+                                <p class="text-muted mb-2"><strong>Full Name :</strong> <span class="ml-2">Bill Hewitt</span></p>
+
+                                <p class="text-muted mb-2"><strong>Values :</strong><span class="ml-2"><span class="badge badge-light badge-pill">Work-Life Balance</span>, <span class="badge badge-light badge-pill">Teamwork</span></span></p>
+
+                                <p class="text-muted mb-2"><strong>Interests :</strong><span class="ml-2"><span class="badge badge-light badge-pill">Sport</span>, <span class="badge badge-light badge-pill">Music</span></span></p>
+
+                                <p class="text-muted mb-2"><strong>Location :</strong> <span class="ml-2">UK</span></p>
+                                
+                                <p class="text-muted mb-2"><strong>Teams :</strong> <span class="ml-2">Product & Engineering, London</span></p>
+
+                                <p class="text-muted mb-2"><strong>Mobile :</strong><span class="ml-2">07777 777777</span></p>
+
+                                <p class="text-muted mb-2"><strong>Email :</strong> <span class="ml-2 ">bill.hewitt@perkbox.com</span></p>
+
+                                <p class="text-muted mb-2"><strong>Gender :</strong> <span class="ml-2 ">Male</span></p>
+
+                                
+                            </div>
+
+                            <ul class="social-list list-inline mt-3 mb-0">
+                                <a href="/admin/profileedit" class="btn btn-light">Edit Details</a>
+                            </ul>
+                        </div> <!-- end card-box -->
+
+                        <div class="card-box text-center d-none d-lg-block">
+                            <h4 class="mb-0">Awards</h4>
+
+
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <p class="text-muted mt-4">You've not received any team or company awards yet</p>
+                                </div>
+                            </div>
+                        </div> <!-- end card-box -->
+
+                    </div>
+                </div>
+
+               
+                
+            </div> <!-- end container -->
+       </div><%- content_for :footer_js do %>
+  
+<%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/multiselect/jquery.multi-select.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/select2/select2.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/jquery-mockjax/jquery.mockjax.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/autocomplete/jquery.autocomplete.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-select/bootstrap-select.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/libs/bootstrap-maxlength/bootstrap-maxlength.min.js', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'admin/js/pages/form-advanced.init.js', 'data-turbolinks-track': 'reload' %>
+<% end %>
