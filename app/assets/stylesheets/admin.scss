@@ -1,5 +1,45 @@
 @import 'rubik';
 @import 'sf-ui-font';
+
+[id='toggle-heart'] {
+  position: absolute;
+  left: -100vw;
+}
+
+[for='toggle-heart'] {
+  color: #aab8c2;
+}
+
+[id='toggle-heart']:checked + label {
+  color: #e2264d;
+}
+
+[for='toggle-heart'] {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@keyframes heart { 0%, 17.5% { font-size: 0.4em; } }
+
+[id='toggle-heart']:checked + label {
+  will-change: font-size;
+  animation: heart .5s cubic-bezier(.17, .89, .32, 1.49,);
+}
+
+[for='toggle-heart'] {
+  position: relative;
+
+  &:before, &:after {
+    position: absolute;
+    z-index: -1;
+    top: 50%; left: 50%;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+
+
 .navbar-custom .topnav-menu .nav-link {
   padding: 0 15px;
   color: #6c757d;

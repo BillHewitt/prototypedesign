@@ -130,9 +130,11 @@
 
                                         <div class="mt-2">
                                             <button data-toggle="collapse" data-target="#demo" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-comment"></i> 2 Comments </button>
-                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart-outline"></i> 28 Likes</a>
-                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-emoticon-happy-outline"></i> React</a>
+
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted heart mt-1"><input id="toggle-heart" type="checkbox" />
+                                            <label for="toggle-heart"><i class="mdi mdi-heart"></i></label> 28 Likes</a>
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-share-variant"></i> Share</a>
+
                                         </div>
                                     </div>
 
@@ -203,7 +205,7 @@
                                         <p class="mt-1">Ok, so we know communication is tough between our offices. We're going to try rolling out Slack to see if it helps us scale our culture just that little bit better!</p>
                                         <div class="mt-2">
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-comment"></i> 2 Comments</a>
-                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart-outline"></i> 67 Likes</a>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart"></i> 67 Likes</a>
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-emoticon-happy-outline"></i> React</a>
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-share-variant"></i> Share</a>
                                         </div>
@@ -224,7 +226,7 @@
                                             <button type="button" class="btn btn-light mt-2">Submit Question</button>
                                         </div>
                                         <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-comment"></i> 1 Comments</a>
-                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart-outline"></i> 13 Likes</a>
+                                            <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-heart"></i> 13 Likes</a>
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-emoticon-happy-outline"></i> React</a>
                                             <a href="javascript: void(0);" class="btn btn-sm btn-link text-muted"><i class="mdi mdi-share-variant"></i> Share</a>
                                     </div>
@@ -292,6 +294,13 @@
                 
             </div> <!-- end container -->
        </div><%- content_for :footer_js do %>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("mdi mdi-heart");
+}
+</script>
+
 <%= javascript_include_tag 'admin/libs/tippy-js/tippy.all.min.js', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'admin/libs/jquery-nice-select/jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'admin/libs/switchery/switchery.min.js', 'data-turbolinks-track': 'reload' %>
