@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   scope :admin do
+    get '/', to: 'admin_pages#static', page: 'index'
     get ':page', to: 'admin_pages#static', as: :admin
   end
   
