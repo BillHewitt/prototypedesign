@@ -108,9 +108,7 @@
     
                 </div>
             </li>
-            <% if current_page?(admin_path(page: 'hub')) %>
-                This is test only on hub page in navigaion 
-            <% end %>
+
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <img src="/template-assets/images/users/bill.jpg" alt="user-image" class="rounded-circle">
@@ -190,6 +188,7 @@
 
 
                 
+                <% if current_page?(admin_path(page: 'hub')) %>
 
 
                 <li class="dropdown d-none d-lg-block">
@@ -198,12 +197,22 @@
                     </a>
                 </li>
 
+                <% else %>
 
-            <li class="dropdown d-none d-lg-block">
-                <a class="nav-link" href="/admin/gifted" role="button" aria-haspopup="false" aria-expanded="false">
-                    Gifted
-                </a>
-            </li>
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link" href="/admin/hub" role="button" aria-haspopup="false" aria-expanded="false">
+                        The Hub
+                    </a>
+                </li>
+
+                <% end %>
+
+
+                <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link" href="/admin/gifted" role="button" aria-haspopup="false" aria-expanded="false">
+                        Gifted
+                    </a>
+                </li>
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
