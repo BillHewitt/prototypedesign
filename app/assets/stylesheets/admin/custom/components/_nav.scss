@@ -6,7 +6,9 @@
     > li {
         > a {
             color: $gray-700;
-            font-weight: $font-weight-semibold;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
         }
     }
 }
@@ -14,7 +16,7 @@
 .nav-pills {
     > a {
         color: $gray-700;
-        font-weight: $font-weight-semibold;   
+        font-weight: 400;   
     }
 }
 
