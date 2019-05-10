@@ -108,7 +108,9 @@
     
                 </div>
             </li>
-    
+            <% if current_page?(admin_path(page: 'hub')) %>
+                This is test only on hub page in navigaion 
+            <% end %>
             <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle nav-user mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <img src="/template-assets/images/users/bill.jpg" alt="user-image" class="rounded-circle">
@@ -121,9 +123,9 @@
                     <div class="dropdown-header noti-title">
                         <h5 class="text-overflow m-0">Welcome !</h5>
                     </div>
-    
+                    
                     <!-- item-->
-                    <a href="/admin/profile" class="dropdown-item notify-item">
+                    <a href="/admin/profile" class="dropdown-item notify-item <% admin_active_class('profile') %>">
                         <i class="fe-user"></i>
                         <span class="ml-1">Your Profile</span>
                     </a>
