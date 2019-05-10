@@ -99,11 +99,11 @@
 
 @font-face {
     font-family: 'Rubik-Regular';
-    src: fonts-url('rubik/Rubic-Regular.eot');
-    src: fonts-url('rubik/Rubic-Regular.eot?#iefix') format('embedded-opentype'),
-        fonts-url('rubik/Rubic-Regular.woff2') format('woff2'),
-        fonts-url('rubik/Rubic-Regular.woff') format('woff'),
-        fonts-url('rubik/Rubic-Regular.ttf') format('truetype');
+    src: font-url('rubik/Rubic-Regular.eot');
+    src: font-url('rubik/Rubic-Regular.eot?#iefix') format('embedded-opentype'),
+        font-url('rubik/Rubic-Regular.woff2') format('woff2'),
+        font-url('rubik/Rubic-Regular.woff') format('woff'),
+        font-url('rubik/Rubic-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
