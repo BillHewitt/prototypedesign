@@ -290,7 +290,7 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
-                                                <h4 class="mb-4 text-center text-uppercase"> Have your say</h4>
+                                                <h4 class="mb-4 text-center text-uppercase"> Your feedback</h4>
 
                                                 <form>
                                                     <div id="basicwizard">
@@ -372,7 +372,137 @@
                                                                         <div class="text-center">
                                                                             <h3 class="mt-0 mb-4">Here's a summary</h3>
 
-                                                                            <p class="w-75 mb-4 mx-auto">"I sometimes find it pretty hard to concentrate in the office with all the noise. If we could have more quiet spaces that would be ace."</p>
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"I sometimes find it pretty hard to concentrate in the office with all the noise. If we could have more quiet spaces that would be ace."</i></p>
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center">
+
+                                                                            <div class="mb-3">
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                                                    <label class="custom-control-label" for="customCheck1">Send feedback anonymously</label>
+                                                                                </div>
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                                                    <label class="custom-control-label" for="customCheck2">Send feedback to my line manager</label>
+                                                                                </div>
+                                                                                <div class="custom-control custom-checkbox">
+                                                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                                                    <label class="custom-control-label" for="customCheck3">Send feedback to my HR manager</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row justify-content-md-center">
+                                                                            <button type="button" class="btn btn-warning text-center" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                                                              Submit feedback
+                                                                            </button>
+                                                                        </div>
+
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+                                                            </div>
+
+                                                        </div> <!-- tab-content -->
+                                                    </div> <!-- end #basicwizard-->
+                                                </form>
+
+                                            </div> <!-- end card-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <button type="button" class="close mt-0" data-dismiss="modal" aria-hidden="true">×</button>
+                                                <h4 class="mb-4 text-center text-uppercase"> Recognise someone</h4>
+
+                                                <form>
+                                                    <div id="basicwizard">
+
+                                                        <ul class="nav nav-pills bg-light nav-justified form-wizard-header mb-2">
+                                                            <li class="nav-item">
+                                                                <a href="#basictab1" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2 active"> 
+                                                                    <span class="d-none d-sm-inline">Feedback type</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab2" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Your feedback</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="#basictab3" data-toggle="tab" class="nav-link rounded-0 pt-2 pb-2">
+                                                                    <span class="d-none d-sm-inline">Confirmation</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="tab-content b-0 mb-0">
+                                                            <div class="tab-pane active" id="basictab1">
+                                                                <div class="row">
+
+                                                                <div class="col-md-6">
+                                                                    <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h4 class="text-dark my-1">Open text</h4>
+                                                                                    <p class="text-muted mb-1 text-truncate">Let us know your open feedback</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col-->
+
+                                                                
+
+                                                                <div class="col-md-6">
+                                                                    <a href="#" class="card p-3 outline">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="text-center">
+                                                                                    <h4 class="text-dark my-1">Pulse survey</h4>
+                                                                                    <p class="text-muted mb-1 text-truncate">5 quick questions about your experience</p>
+                                                                                </div>
+                                                                            </div>
+                                                                          </div> <!-- end row-->
+                                                                        </a> <!-- end widget-rounded-circle-->
+                                                                    </div> <!-- end col-->
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab2">
+                                                                <div class="row mt-0">
+                                                                    <div class="col-12">
+                                                                        <textarea id="" class="form-control" rows="4" placeholder="Your feedback has a limit of 400 characters."></textarea>
+                                                                    </div> <!-- end col -->
+                                                                </div> <!-- end row -->
+
+                                                                <ul class="list-inline wizard mt-2 mb-0">
+                                                                    <li class="previous list-inline-item disabled">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Previous</a>
+                                                                    </li>
+                                                                    <li class="next list-inline-item float-right">
+                                                                        <a href="javascript: void(0);" class="btn btn-light">Next</a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+
+                                                            <div class="tab-pane" id="basictab3">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="text-center">
+                                                                            <h3 class="mt-0 mb-4">Here's a summary</h3>
+
+                                                                            <p class="w-75 mb-4 mx-auto"><i>"I sometimes find it pretty hard to concentrate in the office with all the noise. If we could have more quiet spaces that would be ace."</i></p>
                                                                         </div>
 
                                                                         <div class="row justify-content-md-center">
@@ -422,7 +552,7 @@
 
                             <div class="card-box">
                                 <h4 class="text-uppercase header-title">Have your say</h4>
-                                <p class="mt-3">Give us your feedback to help make company name a better place to work</p>
+                                <p class="mt-3">Give us your feedback to help make {company name} a better place to work</p>
                                       <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg">
                                       Give feedback
                                     </button>
@@ -450,7 +580,7 @@
                                                                 <img src="/template-assets/images/users/maddie.jpg" class="rounded-circle avatar-sm" alt="friend">
                                                             </a>
                                                         </div>
-                                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#sign-in-modal9">
+                                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bs-example-modal-lg1">
                                       Recognise someone
                                     </button>
                             </div>
