@@ -172,7 +172,7 @@
     
         <!-- LOGO -->
         <div class="logo-box">
-            <a href="#" class="logo text-center">
+            <a href="/admin/home" class="logo text-center">
                 <span class="logo-lg">
                     <img src="/template-assets/images/perkbox2.png" alt="" height="44">
                     <!-- <span class="logo-lg-text-light">UBold</span> -->
@@ -207,12 +207,24 @@
 
                 <% end %>
 
+                <% if current_page?(admin_path(page: 'gifted')) %>
+
 
                 <li class="dropdown d-none d-lg-block">
+                    <a class="nav-link active" href="/admin/gifted" role="button" aria-haspopup="false" aria-expanded="false">
+                        Gifted
+                    </a>
+                </li>
+
+                 <% else %>
+
+                 <li class="dropdown d-none d-lg-block">
                     <a class="nav-link" href="/admin/gifted" role="button" aria-haspopup="false" aria-expanded="false">
                         Gifted
                     </a>
                 </li>
+
+                 <% end %>
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
