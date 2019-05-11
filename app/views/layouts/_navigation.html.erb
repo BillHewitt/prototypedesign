@@ -235,10 +235,18 @@
                  <% end %>
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    Collections
-                    <i class="mdi mdi-chevron-down"></i> 
-                </a>
+
+                <% if current_page?(admin_path(page: 'everyday')) %>
+                    <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        Collections
+                        <i class="mdi mdi-chevron-down"></i> 
+                    </a>
+                <% else %>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        Collections
+                        <i class="mdi mdi-chevron-down"></i> 
+                    </a>
+                <% end %>
                 <div class="dropdown-menu dropdown-megamenu" style="padding: 30px;">
                     <div class="row">
                         <div class="col-sm-9">
