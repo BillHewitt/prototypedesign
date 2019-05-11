@@ -32,11 +32,19 @@
             </li>
     
 
-            <li class="notification-list d-none d-lg-block">
-                <a class="nav-link" href="/admin/wallet" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="mdi mdi-wallet-outline noti-icon"></i>
-                </a>
-            </li>
+            <% if current_page?(admin_path(page: 'wallet')) %>
+                <li class="notification-list d-none d-lg-block">
+                    <a class="nav-link active" href="/admin/wallet" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="mdi mdi-wallet-outline noti-icon"></i>
+                    </a>
+                </li>
+            <% else %>
+                <li class="notification-list d-none d-lg-block">
+                    <a class="nav-link" href="/admin/wallet" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="mdi mdi-wallet-outline noti-icon"></i>
+                    </a>
+                </li>
+            <% end %>
 
 
             
