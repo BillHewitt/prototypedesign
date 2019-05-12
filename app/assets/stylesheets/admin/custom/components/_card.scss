@@ -20,7 +20,7 @@
 
 .card {
     margin-bottom: $grid-gutter-width;
-    box-shadow: $shadow-sm;
+    box-shadow: $shadow-lg;
     border-radius: 0.5rem;
 
     .card-drop {
@@ -98,10 +98,11 @@
 .card-box {
     background-color: $white;
     padding: $card-spacer-x;
-    box-shadow: $shadow-sm;
+    box-shadow: 0 1rem 1rem rgba(56, 65, 74, 0.03);
     margin-bottom: $grid-gutter-width;
     border-radius: 0.9rem;
 }
+
 
 .header-title {
     font-size: 1rem;
