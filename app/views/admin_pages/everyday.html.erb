@@ -29,8 +29,8 @@
         Employee Role
       </h1>
     <% end %>
-    <% link_to 'Manager index', admin_path(role: :manager, page: :index) %>
-    <% link_to 'Admin index', admin_path(role: :admin, page: :index) %>
+    <%= link_to 'Manager index', admin_path(role: :manager, page: :index) %>
+    <%=  link_to 'Admin index', admin_path(role: :admin, page: :index) %>
     <!-- start page title -->
     <div class="row">
         <div class="col-8">
