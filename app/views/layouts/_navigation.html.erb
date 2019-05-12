@@ -163,7 +163,7 @@
                     <div class="dropdown-divider"></div>
     
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <a href="/admin/help" class="dropdown-item notify-item">
                         <i class="fe-help-circle"></i>
                         <span class="ml-1">Help & Support</span>
                     </a>
@@ -215,7 +215,7 @@
 
                 <% end %>
 
-                <% if current_page?(admin_path(page: 'gifted')) %>
+                <% if current_pages?(%w(gifted holiday medical starts asosr creditr)) %>
 
 
                 <li class="dropdown d-none d-lg-block">
@@ -236,7 +236,7 @@
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
 
-                <% if current_pages?(%w(everyday learning)) %>
+                <% if current_pages?(%w(everyday learning health asos amazon audible tesco apple adidas netflix company collections)) %>
                     <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         Collections
                         <i class="mdi mdi-chevron-down"></i> 
@@ -293,10 +293,10 @@
                                             <a href="/admin/learning#timeline">Online Courses</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Events</a>
+                                            <a href="/admin/learning#settings">Events</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Mentoring & Tuition</a>
+                                            <a href="/admin/learning#settings1">Mentoring & Tuition</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -308,13 +308,13 @@
                                             <a href="/admin/health">View All</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Health Promotion</a>
+                                            <a href="/admin/health2#aboutme">Health Promotion</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Employee Support</a>
+                                            <a href="/admin/health2#timeline">Employee Support</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Insurance</a>
+                                            <a href="/admin/health2#settings">Insurance</a>
                                         </li>
                                     </ul>
                                 </div>
