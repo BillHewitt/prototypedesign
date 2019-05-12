@@ -2,7 +2,7 @@
   div[data-isotope-item]{
     .img_wrap{
       position: relative;
-      overflow: hidden;
+      // overflow: hidden;
       img{
         width: 100%;
       }
@@ -13,7 +13,7 @@
         width:152px;
         font-size:15px;
         margin-left:-75px;
-        top: 80px;
+        top: 15px;
         -webkit-transition: all 200ms ease-out; 
             -moz-transition: all 200ms ease-out; 
               -o-transition: all 200ms ease-out; 
@@ -29,12 +29,19 @@
                 transition: all 200ms ease-out; 
       }
       .product-options-wrap{
-        bottom: 0px;
-        -webkit-transition: bottom 400ms ease-out; 
-        -moz-transition: bottom 400ms ease-out; 
-          -o-transition: bottom 400ms ease-out; 
-            transition: bottom 400ms ease-out;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all 400ms ease-out; 
+        -moz-transition: all 400ms ease-out; 
+          -o-transition: all 400ms ease-out; 
+            transition: all 400ms ease-out;
 
+      }
+      .product-info{
+        border-radius: 0px; 
+      }
+      .product-options{
+        height: auto;
       }
     }
 
@@ -42,23 +49,35 @@
 }
 .product-options-wrap{
   background: white;
-  position: absolute;
+  position: relative;
   width: 100%;
-  padding: 1px;
-  bottom: -100px;
+  bottom: 4px;
+  z-index: 10000;
+    border-radius: 0px 0px 4px 4px;
+  -moz-border-radius: 0px 0px 4px 4px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+
 }
 .product-info{
   position: relative;
   height: auto;
   top: 0px; 
-  padding: 0px 15px 5px 15px;
+  padding: 1px 15px 5px 15px;
+
 }
 
 .product-options{
-  padding: 0px 15px 10px 15px;
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 10px;
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: 0px;
+  background: white;
+      border-radius: 0px 0px 4px 4px;
+  -moz-border-radius: 0px 0px 4px 4px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+
   strong{
     font-weight:700;
     color:#393c45;
@@ -76,6 +95,8 @@
 
 
 .colors{
+  padding-bottom: 10px;
+  overflow: hidden;
   .color{
     margin-top:3px;
     width:15px; 
