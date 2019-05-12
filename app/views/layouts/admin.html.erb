@@ -11,14 +11,26 @@
 
   <body>
 
-    <%= render 'layouts/navigation' %>
+    <% if current_pages?(%w(login1 login2 login3 login4)) %>
+
+    <% else %>
+
+      <%= render 'layouts/navigation' %>
+
+    <% end %>
 
     <%= yield %>
 
     <div class="rightbar-overlay"></div>
 
+    <% if current_pages?(%w(login1 login2 login3 login4)) %>
+
+    <% else %>
+
     <%= render 'layouts/admin/footer' %>
     <%= render 'layouts/admin/right_sidebar'%>
+
+    <% end %>
     
     <%= javascript_include_tag 'admin/vendor.js', 'data-turbolinks-track': 'reload' %>
     <%= yield :footer_js %>
