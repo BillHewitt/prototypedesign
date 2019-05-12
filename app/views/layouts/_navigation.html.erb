@@ -1,7 +1,7 @@
 <header id="topnav">
 <!-- Topbar Start -->
 <div class="navbar-custom" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)";>
-    <div class="container-fluid">
+    <div class="container">
         <ul class="list-unstyled topnav-menu float-right mb-0">
 
             <li class="dropdown notification-list">
@@ -32,7 +32,7 @@
             </li>
     
 
-            <% if current_page?(admin_path(page: 'wallet')) %>
+            <% if current_pages?(%w(wallet credit)) %>
                 <li class="notification-list d-none d-lg-block">
                     <a class="nav-link active" href="/admin/wallet" role="button" aria-haspopup="false" aria-expanded="false">
                         <i class="mdi mdi-wallet-outline noti-icon"></i>
@@ -236,7 +236,7 @@
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
 
-                <% if current_page?(admin_path(page: 'everyday')) %>
+                <% if current_pages?(%w(everyday learning)) %>
                     <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                         Collections
                         <i class="mdi mdi-chevron-down"></i> 
