@@ -21,6 +21,10 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
 gem 'material_design_icons'
 
+gem 'mongoid'
+gem 'kaminari-mongoid'
+gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
+gem 'mini_magick'
 
 # gem 'bootstrap-tooltip-rails'
 
