@@ -1,5 +1,11 @@
 <header id="topnav">
 <!-- Topbar Start -->
+
+<style>
+    .dropdown.dropdown-mega:hover>.dropdown-menu {
+        display: block;
+    }
+</style>
 <div class="navbar-custom" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2)";>
     <div class="container">
         <ul class="list-unstyled topnav-menu float-right mb-0">
@@ -233,20 +239,23 @@
                 </li>
 
                  <% end %>
+
     
             <li class="dropdown dropdown-mega d-none d-lg-block">
 
                 <% if current_pages?(%w(everyday learning health asos amazon audible tesco apple adidas netflix company collections)) %>
-                    <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <a class="nav-link active dropdown-toggle" href="/admin/collections" role="button" aria-haspopup="false" aria-expanded="false">
                         Collections
                         <i class="mdi mdi-chevron-down"></i> 
                     </a>
                 <% else %>
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="/admin/collections" role="button" aria-haspopup="false" aria-expanded="false">
                         Collections
                         <i class="mdi mdi-chevron-down"></i> 
                     </a>
                 <% end %>
+
+
                 <div class="dropdown-menu dropdown-megamenu" style="padding: 30px;">
                     <div class="row">
                         <div class="col-sm-9">
@@ -386,3 +395,7 @@
 </div>
 <!-- end navbar-custom -->
  </header>
+
+ <script type="text/javascript">
+     
+ </script>
