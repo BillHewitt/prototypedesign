@@ -227,7 +227,7 @@ p {
 
 .bg-home {
     position: relative;
-    padding: 200px 0px 180px 0px;
+    padding: 150px 0px 180px 0px;
 }
 
 .home-center {
@@ -412,13 +412,13 @@ p {
 .faq-question-q-box {
     height: 30px;
     width: 30px;
-    color: $primary;
+    color: #fff;
     text-align: center;
     border-radius: 50%;
     float: left;
     font-weight: 700;
     line-height: 30px;
-    background-color: rgba($primary,0.15);
+    background-color: #52489C;
 }
 
 .faq-question {
@@ -664,6 +664,21 @@ p {
   margin-bottom: 0;
   background-color: #fff;
   border-bottom: 0 solid #f7f7f7;
+}
+
+.btn-warning {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 0.6rem;
+    color: #343a40;
+    box-shadow: rgba(59, 59, 54, 0.12) 0px 2px 8px 0px;
+}
+
+.btn-warning:hover {
+    color: #343a40;
+    background-color: #faca44;
+    border-color: #faca44;
 }
 
 
